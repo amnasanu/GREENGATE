@@ -6,8 +6,7 @@ router = routers.DefaultRouters()
 
 router.register(r'farmers',FarmerViewSet)
 
-urlpatterns =[
+urlpatterns = [
+    path('api/',include(router.urls))
 
-    path('api/',include(router.urls)),
-    
 ]
